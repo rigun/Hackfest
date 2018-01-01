@@ -1,0 +1,37 @@
+body { background-color: #1A1A1A;}
+.bg-header {
+    background-image: url('../images/bg-circuit.png');
+    height: 50vh;
+}
+.bg-garis {
+    background-image: url('../images/bg-pattern.png');
+    height: 60vh;
+}
+.bg-putih { background-color: #fff; height: 100%; }
+.red, .green, .blue { height: 1vh; }
+.red {background-color: #FF9999;}
+.green {background-color: #DAFF99;}
+.blue {background-color: #99EBFF;}
+
+.line-title {height: 2px; background-color: brown; width: 60%;}
+.title { padding-top: 1em; }
+.button-title { padding-right: 2vw; margin-top: -1vh; text-align: right;}
+
+.tentang { padding-top: 10vh;}
+.logo { text-align: center;}
+.section2 { height: 100%;background-color: #fff;}
+.kategori {padding-top: 10vh;}
+.kotak {height: 50vh;width: 20vw; background-color: #E1D9FF; margin: 1vh 1vh 1vh 1vh; text-align: center;}
+.kotak-title { padding-top: 13vh;}
+.kotak-button {padding-top: 1vh;}
+.kotak2 {background-color: #D9FEFF;}
+.kotak3 { background-color: #FFFCD9;}
+.aturan { padding-top: 10vh;}
+.aturan-singkat {padding-top: 5vh;}
+.aturan-button {padding-top: 5vh; padding-bottom: 5vh;}
+.hadiah { padding-top: 5vh; background-image: url('../images/bg-hadiah.png'); height: 40vh; text-align: center;}
+
+.section3 { height: 100%; background-color: #fff; color: #333333;}
+.sponsor { padding-top: 1em;}
+.form-horizontal {margin-left: 5em;}
+.credit { height: 30vh; background-color: #333333}
