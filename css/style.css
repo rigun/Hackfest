@@ -1,14 +1,22 @@
-body { background-color: #1A1A1A;}
+body { background-color: #1A1A1A; padding-top: 55px;}
+
+.navbar-dark a {color: rgb(233, 60, 7);}
+.navbar-dark a:hover {color: rgb(251, 255, 2);}
+.navbar-dark { background-color: #333333;}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus{ color: rgb(233, 60, 7); }
+.navbar-dark .navbar-nav .nav-link { color: #fff; }
+
 .bg-header {
     background-image: url('../images/bg-circuit.png');
-    height: 50vh;
+    height: 300px;
 }
 .bg-garis {
     background-image: url('../images/bg-pattern.png');
-    height: 60vh;
+    height: 100%;
 }
 .bg-putih { background-color: #fff; height: 100%; }
-.red, .green, .blue { height: 1vh; }
+.red, .green, .blue { height: 5px; }
 .red {background-color: #FF9999;}
 .green {background-color: #DAFF99;}
 .blue {background-color: #99EBFF;}
@@ -17,21 +25,45 @@ body { background-color: #1A1A1A;}
 .title { padding-top: 1em; }
 .button-title { padding-right: 2vw; margin-top: -1vh; text-align: right;}
 
-.tentang { padding-top: 10vh;}
+.tentang { padding-top:  3em; padding-bottom: 2em;}
+.singkat { padding-top: 1em;}
 .logo { text-align: center;}
 .section2 { height: 100%;background-color: #fff;}
-.kategori {padding-top: 10vh;}
-.kotak {height: 50vh;width: 20vw; background-color: #E1D9FF; margin: 1vh 1vh 1vh 1vh; text-align: center;}
+.kategori {padding-top: 5em;}
+.kotak {height: 18rem;width: 70%; background-color: #E1D9FF; margin: 0.5em; text-align: center;}
 .kotak-title { padding-top: 13vh;}
 .kotak-button {padding-top: 1vh;}
 .kotak2 {background-color: #D9FEFF;}
-.kotak3 { background-color: #FFFCD9;}
+.kotak3 { background-color: rgb(255, 217, 217);}
 .aturan { padding-top: 10vh;}
 .aturan-singkat {padding-top: 5vh;}
 .aturan-button {padding-top: 5vh; padding-bottom: 5vh;}
 .hadiah { padding-top: 5vh; background-image: url('../images/bg-hadiah.png'); height: 40vh; text-align: center;}
 
 .section3 { height: 100%; background-color: #fff; color: #333333;}
-.sponsor { padding-top: 1em;}
+.sponsor { padding-top: 3em;}
 .form-horizontal {margin-left: 5em;}
-.credit { height: 30vh; background-color: #333333}
+.credit { height: 100%; background-color: #333333}
+
+.gold { margin: auto 2em 2em auto;}
+.bronze {margin: auto 2em 1em auto}
+
+.akun { margin: 2em auto;}
+.kontak{
+    color: rgb(238, 252, 248);
+    margin-top: 3em;
+    -webkit-box-shadow: 0 3px 0 rgba(253, 247, 247, 0.692);
+    -moz-box-shadow: 0 3px 0 rgba(240, 240, 240, 0.1);
+    -ms-box-shadow: 0 3px 0 rgba(241, 236, 236, 0.1);
+    box-shadow: 0 3px 0 rgba(248, 246, 246, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 767px){
+    .tentang {text-align: center;}
+    .form-horizontal { margin-left: 2em}
+    .akun { margin-top: 2em; margin-bottom: 0;}
+    .kontak { text-align: center; padding-left: 1.5em;}
+}
