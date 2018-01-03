@@ -1,2 +1,2 @@
 # Readme Files
-### Belum Responsive ya
+### Kurang animasi
