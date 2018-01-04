@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>IFOC: Informatic Festival Overclock Competition</title>
+    <title>Informatic Festival Overclock Competition</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,15 +15,15 @@
 
     <script src="js/scrollreveal.min.js"></script>
     <script>
-        window.sr = ScrollReveal();
+        window.sr = ScrollReveal({ reset: true });
     </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
-    <!-- NAVIGASI DISINI -->
+<body>
+    <!-- NAVIGASI -->
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="#">Informatics Festival Overclock Competition</a>
+            <a class="navbar-brand" href="#awal">Overc;ock Competition</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,81 +31,68 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#tentang">Tentang
+                        <a class="nav-link" href="#link-tentang">Tentang
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#kategori">Kategori</a>
+                        <a class="nav-link" href="#link-kategori">Kategori</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aturan">Aturan</a>
+                        <a class="nav-link" href="#link-aturan">Aturan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#jadwal">Jadwal</a>
+                        <a class="nav-link" href="#link-jadwal">Jadwal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sponsor">Sponsor</a>
+                        <a class="nav-link" href="#link-hadiah">Hadiah</a>
                     </li>
                 </ul>
                 <a href="#" class="nav-link">Masuk</a>
             </div>
         </nav>
     </header>
-    <!-- NAVIGASI BERAKHIR DISINI -->
-
-    <!-- KOTAK WARNA WARNI DISINI -->
-    <div class="container-fluid">
+    <!-- AKHIR NAVIGASI -->
+    <div class="container-fluid" id="awal">
         <div class="row">
             <div class="col-4 red"></div>
             <div class="col-4 green"></div>
             <div class="col-4 blue"></div>
         </div>
-    </div>
-    <!-- KOTAK WARNA WARNI BERAKHIR DISINI -->
+        <div style="text-align: center">
+            <img class="logo-ifest" src="images/ifest.png" alt="">
+        </div>
 
-    <!-- GAMBAR HEADER DISINI -->
-    <div class="col bg-header"></div>
-    <!-- TENTANG IFOC DISINI -->
-    <a id=""></a>
-    <div class="container-fluid bg-garis" id="tentang">
+        <!-- TENTANG -->
+        <div class="container blue" id="link-tentang"></div>
         <div class="container bg-putih">
-            <div class="row title">
-                <div class="col-8 ">
-                    <h4>Informatics Festival: Overclock Competition</h4>
-                </div>
-                <div class="col-4 button-title">
-                    <button type="button" class="btn btn-danger">Daftar</button>
-                </div>
-            </div>
-            <div class="col line-title"></div>
-            <div class="row tentang">
-                <div class="col-md-4 logo">
-                    <img src="images/ifoc.png" alt="">
+            <div class="row justify-content-center tentang">
+                <div class="col-md-4 logo-ifoc">
+                    <img src="images/IFOC.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-6 singkat">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper sit amet. Nibh tortor id aliquet lectus
-                        proin nibh nisl condimentum. Nec feugiat in fermentum posuere urna nec tincidunt. Cursus metus aliquam
-                        eleifend mi. Fringilla phasellus faucibus scelerisque eleifend. Egestas diam in arcu cursus euismod
-                        quis viverra nibh.</p>
+                    <span class="apa-itu">Apa itu Informatic Festival Overclock Competition</span> ,Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Iusto culpa eveniet dolorem dolore explicabo iste, quos, nisi, sit sequi dolor repudiandae ut eaque
+                    beatae atque ipsa laboriosam quis ea odio est id esse. At ducimus tempore placeat. Consectetur, soluta
+                    iste?
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <form action="http://google.com">
+                        <input type="submit" value="Saya Ingin Mendaftar" class="btn-penting daftar" />
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- TENTANG IFOC BERAKHIR DISINI -->
-    <a id="kategori"></a>
-    <!-- KATEGORI/ATURAN/HADIAH/JADWAL IFOC DISINI -->
-    <div class="container-fluid">
-        <div class="container bg-putih section2">
-            <!-- KATEGORI IFOC DISINI -->
-            <div class="row title">
-                <div class="col-8 ">
-                    <h4>Kategori Kategori yang Ada</h4>
-                </div>
-                <div class="col-4 button-title"></div>
-            </div>
-            <div class="col line-title"></div>
+        <!-- AKHIR TENTANG -->
+
+        <div class="container parallax-one"></div>
+        <div class="container red" id="link-kategori"></div>
+        <div class="container bg-putih">
+
+            <!-- KATEGORI -->
+            <div class="col title">Kategori Lomba</div>
             <div class="row kategori justify-content-center">
                 <div class="col-md-3 kotak kotak1">
                     <div class="kotak-title">
@@ -113,7 +100,9 @@
                     </div>
                     <div class="kotak-singkat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, perspiciatis.</div>
                     <div class="kotak-button">
-                        <button type="button" class="btn btn-light">Selengkapnya</button>
+                        <form action="http://google.com">
+                            <input type="submit" value="Selengkapnya" class="btn-lain" />
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-3 kotak kotak2">
@@ -122,7 +111,9 @@
                     </div>
                     <div class="kotak-singkat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, perspiciatis.</div>
                     <div class="kotak-button">
-                        <button type="button" class="btn btn-light">Selengkapnya</button>
+                        <form action="http://google.com">
+                            <input type="submit" value="Selengkapnya" class="btn-lain" />
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-3 kotak kotak3">
@@ -131,48 +122,37 @@
                     </div>
                     <div class="kotak-singkat">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, perspiciatis.</div>
                     <div class="kotak-button">
-                        <button type="button" class="btn btn-light">Selengkapnya</button>
+                        <form action="http://google.com">
+                            <input type="submit" value="Selengkapnya" class="btn-lain" />
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- KATEGORI IFOC BERAKHIR DISINI -->
-            <a id="aturan"></a>
-            <!-- ATURAN IFOC DISINI -->
-            <div class="row title aturan">
-                <div class="col-8 ">
-                    <h4>Aturan dan Hadiah dalam Kompetisi</h4>
+            <!-- AKHIR KATEGORI -->
+
+            <!-- ATURAN -->
+            <div class="col title" id="link-aturan">Aturan dalam Lomba</div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 aturan-singkat">
+                    <span class="apa-itu">Aturan yang harus diikuti seperti</span> ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                    culpa eveniet dolorem dolore explicabo iste, quos, nisi, sit sequi dolor repudiandae ut eaque beatae
+                    atque ipsa laboriosam quis ea odio est id esse. At ducimus tempore placeat. Consectetur, soluta iste?
                 </div>
-                <div class="col-4 button-title"></div>
-            </div>
-            <div class="col line-title"></div>
-            <div class="col aturan-singkat">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ea id voluptatum, et ducimus delectus reiciendis, accusamus
-                fugiat culpa magni dignissimos eveniet animi molestiae porro ullam commodi reprehenderit aliquam tempora.
-            </div>
-            <div class="col justify-content-end aturan-button">
-                <button type="button" class="btn btn-warning">Selengkapnya</button>
-            </div>
-            <!-- ATURAN IFOC BERAKHIR DISINI -->
-            <a id="hadiah"></a>
-            <!-- HADIAH IFOC DISINI -->
-            <div class="row hadiah justify-content-center">
-                <div class="col-3">
-                    <img src="images/juara1.png" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/juara2.png" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/juara3.png" alt="">
-                </div>
-                <div class="hadiah-title">
-                    <h4>Total hadiah yang diperebutkan 99 juta rupiah</h4>
+                <div class="col-md-3 logo-aturan">
+                    <img src="images/aturan.png" class="img-fluid" alt="">
                 </div>
             </div>
-            <!-- HADIAH IFOC BERAKHIR DISINI -->
-            <a id="jadwal"></a>
-            <!-- JADWAL IFOC DISINI -->
-            <h1 class="project-name">JADWAL ACARA</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <form action="http://google.com">
+                        <input type="submit" value="Liat dari Poster" class="btn-lain daftar" />
+                    </form>
+                </div>
+            </div>
+            <!-- AKHIR ATURAN -->
+
+            <!-- JADWAL -->
+            <div class="col title" id="link-jadwal">Jadwal Acara</div>
             <div id="timeline">
                 <div class="timeline-item">
                     <div class="timeline-icon">
@@ -237,162 +217,110 @@
                     </div>
                 </div>
             </div>
-            <!-- JADWAL IFOC BERAKHIR DISINI -->
+            <!-- AKHIR JADWAL -->
+
+            <!-- HADIAH -->
+            <div class="col title" id="link-hadiah">Hadiah Lomba</div>
+            <div class="row hadiah justify-content-center">
+                <div class="col-3">
+                    <img src="images/juara1.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/juara2.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/juara3.png" alt="">
+                </div>
+                <div class="hadiah-title">
+                    <h4>Total hadiah yang diperebutkan 99 juta rupiah</h4>
+                </div>
+            </div>
+            <!-- AKHIR HADIAH -->
         </div>
-        <!-- KATEGORI/ATURAN/HADIAH/JADWAL IFOC BERAKHIR DISINI -->
-        <a id="sponsor"></a>
-        <!-- SPONSOR/PESAN IFOC DISINI -->
-        <div class="container bg-putih section3">
-            <div class="row title">
-                <div class="col-8 ">
-                    <h4>SPONSOR SPONSOR</h4>
-                </div>
-                <div class="col-4 button-title"></div>
-            </div>
-            <div class="col line-title"></div>
-            <div class="row sponsor justify-content-center">
-                <div class="col-5 col-md-3">
-                    <img class="img-fluid img-thumbnail gold" src="images/sponsor1.jpg" alt="Gold Sponsor">
-                </div>
-                <div class="col-5 col-md-3">
-                    <img class="img-fluid img-thumbnail gold" src="images/sponsor2.png" alt="Gold Sponsor">
-                    <img class="img-fluid img-thumbnail gold" src="images/sponsor4.png" alt="Gold Sponsor">
-                </div>
-                <div class="col-5 col-md-3">
-                    <img class="img-fluid img-thumbnail gold" src="images/sponsor3.png" alt="Gold Sponsor">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-2 col-sm-1">
-                    <img src="images/sponsor1.jpg" alt="Bronze Sponsor" class="img-fluid img-thumbnail bronze">
-                </div>
-                <div class="col-2 col-sm-1">
-                    <img src="images/sponsor1.jpg" alt="Bronze Sponsor" class="img-fluid img-thumbnail bronze">
-                </div>
-                <div class="col-2 col-sm-1">
-                    <img src="images/sponsor1.jpg" alt="Bronze Sponsor" class="img-fluid img-thumbnail bronze">
-                </div>
-                <div class="col-2 col-sm-1">
-                    <img src="images/sponsor1.jpg" alt="Bronze Sponsor" class="img-fluid img-thumbnail bronze">
-                </div>
-                <div class="col-2 col-sm-1">
-                    <img src="images/sponsor1.jpg" alt="Bronze Sponsor" class="img-fluid img-thumbnail bronze">
-                </div>
-            </div>
 
-            <a id="pesan"></a>
-            <div class="row title">
-                <div class="col-8 ">
-                    <h4>KONTAK KAMI</h4>
-                </div>
-                <div class="col-4 button-title"></div>
-            </div>
-            <div class="col line-title"></div>
-
-            <form class="form-horizontal">
-                <fieldset>
-
-                    <!-- Form Name -->
-                    <legend>Kirim Sebuah Pesan</legend>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="col control-label" for="form-nama">Nama</label>
-                            <div class="col-8">
-                                <input id="form-nama" name="form-nama" type="text" placeholder="Yudho" class="form-control input-md" required="">
-                                <span class="help-block">Tulis nama anda disini ,,</span>
-                            </div>
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="form-group col-md-6">
-                            <label class="col control-label" for="form-email">Email</label>
-                            <div class="col-8">
-                                <input id="form-email" name="form-email" type="text" placeholder="jhon@gmail.com" class="form-control input-md" required="">
-                                <span class="help-block">Tulis alamat email anda disini ,,</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Text input-->
-
-
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="form-asal">Asal</label>
-                        <div class="col-md-4">
-                            <input id="form-asal" name="form-asal" type="text" placeholder="UAJY" class="form-control input-md">
-                            <span class="help-block">(Organisasi/Institusi/Sekolah)</span>
-                        </div>
-                    </div>
-
-                    <!-- Text input-->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="form-subjek">Subjek</label>
-                        <div class="col-md-6">
-                            <input id="form-subjek" name="form-subjek" type="text" placeholder="Subjek" class="form-control input-md" required="">
-
-                        </div>
-                    </div>
-
-                    <!-- Textarea -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="form-pesan">Pesan</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="form-pesan" name="form-pesan"></textarea>
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="form-kirim"></label>
-                        <div class="col-md-4">
-                            <button id="form-kirim" name="form-kirim" class="btn btn-primary">Kirim Pesan</button>
-                        </div>
-                    </div>
-
-                </fieldset>
-            </form>
-
-        </div>
-        <!-- SPONSOR/PESAN IFOC BERAKHIR DISINI -->
     </div>
-
-    <a id="kredit"></a>
-    <!-- CREDIT/AKUN IFOC BERAKHIR DISINI -->
-    <div class="container credit">
-        <div class="row">
-            <div class="col-3 col-sm-2 akun" style="text-align: right">
-                <a href="#">
-                    <img src="images/line.png" alt="Akun Line" class="img-fluid">
-                </a>
+    <div class="green" id="link-kategori"></div>
+    <div class="container-fluid">
+        <div class="container credit">
+            <div class="row">
+                <div class="col-3 col-sm-2 akun" style="text-align: right">
+                    <a href="#">
+                        <img src="images/line.png" alt="Akun Line" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-3 col-sm-2 akun">
+                    <a href="#">
+                        <img src="images/instagram.png" alt="Akun Instagram" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 akun kontak" style="text-align: left">
+                    <span> Rio Gunawan</span>
+                    <span style="margin-left: 4em;"> (+62) 813-9067-8076</span>
+                    <br>
+                    <span> Andika KangenBand</span>
+                    <span style="margin-left: 1em;"> (+62) 812-0000-8076</span>
+                </div>
+                <div class="col-sm-2 akun" style="text-align: left"></div>
             </div>
-            <div class="col-3 col-sm-2 akun">
-                <a href="#">
-                    <img src="images/instagram.png" alt="Akun Instagram" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-6 akun kontak" style="text-align: left">
-                <span> Rio Gunawan</span>
-                <span style="margin-left: 4em;"> (+62) 813-9067-8076</span>
-                <br>
-                <span> Andika KangenBand</span>
-                <span style="margin-left: 1em;"> (+62) 812-0000-8076</span>
-            </div>
-            <div class="col-sm-2 akun" style="text-align: left"></div>
+            <div style="text-align: center;color: #fff;">Copyright © 2017 IFEST UAJY. All rights reserved</div>
         </div>
-        <div style="text-align: center;color: #fff;">Copyright © 2017 IFEST UAJY. All rights reserved</div>
+
     </div>
-    <!-- CREDIT/AKUN IFOC BERAKHIR DISINI -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+        sr.reveal('.logo-ifest');
+        sr.reveal('.logo-ifoc');
+        sr.reveal('.logo-aturan');
+        sr.reveal('.timeline-content',150);
+        sr.reveal('.kotak',150);
         sr.reveal('.title');
         sr.reveal('.line-title');
         sr.reveal('.tentang');
+    </script>
+
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 55
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
     </script>
 </body>
 

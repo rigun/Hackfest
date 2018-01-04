@@ -1,4 +1,4 @@
-body { background-color: #1A1A1A; padding-top: 55px;}
+body { background-color: #000000; padding-top: 55px;}
 
 .navbar-dark a {color: rgb(233, 60, 7);}
 .navbar-dark a:hover {color: rgb(251, 255, 2);}
@@ -7,50 +7,52 @@ body { background-color: #1A1A1A; padding-top: 55px;}
 .navbar-dark .navbar-nav .nav-link:focus{ color: rgb(233, 60, 7); }
 .navbar-dark .navbar-nav .nav-link { color: #fff; }
 
-.bg-header {
-    background-image: url('../images/bg-circuit.png');
-    height: 300px;
-}
-.bg-garis {
-    background-image: url('../images/bg-pattern.png');
-    height: 100%;
-}
-.bg-putih { background-color: #fff; height: 100%; }
 .red, .green, .blue { height: 5px; }
 .red {background-color: #FF9999;}
 .green {background-color: #DAFF99;}
 .blue {background-color: #99EBFF;}
 
-.line-title {height: 2px; background-color: brown; width: 60%;}
-.title { padding-top: 1em; }
-.button-title { padding-right: 2vw; margin-top: -1vh; text-align: right;}
+.logo-ifest {margin: 3.5em auto; width: 35%;}
+.bg-putih {background: #fff; height: 100%; padding-bottom: 3em;}
 
-.tentang { padding-top:  3em; padding-bottom: 2em;}
-.singkat { padding-top: 1em;}
-.logo { text-align: center;}
-.section2 { height: 100%;background-color: #fff;}
-.kategori {padding-top: 5em;}
+.tentang { padding: 3em;}
+.logo-ifoc { text-align: center;}
+.singkat { margin: 2em 0;}
+.apa-itu { font-size: 18px; color: #b53224;}
+.daftar { padding-bottom: 4em;}
+
+.parallax-one {
+    /* The image used */
+    background-image: url('../images/anim-one.gif');
+    /* Set a specific height */
+    height: 300px;
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;    
+}
+.title {
+    padding: 2em 0 2em 0;
+    font-family: 'Share Tech',Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: #000000;
+}
+
 .kotak {height: 18rem;width: 70%; background-color: #E1D9FF; margin: 0.5em; text-align: center;}
-.kotak-title { padding-top: 13vh;}
-.kotak-button {padding-top: 1vh;}
+.kotak-title { padding-top: 4em;}
+.kotak-button {padding-top: 0.5em;}
 .kotak2 {background-color: #D9FEFF;}
 .kotak3 { background-color: rgb(255, 217, 217);}
-.aturan { padding-top: 10vh;}
-.aturan-singkat {padding-top: 5vh;}
-.aturan-button {padding-top: 5vh; padding-bottom: 5vh;}
-.hadiah { padding-top: 5vh; background-image: url('../images/bg-hadiah.png'); height: 40vh; text-align: center;}
 
-.section3 { height: 100%; background-color: #fff; color: #333333;}
-.sponsor { padding-top: 3em;}
-.form-horizontal {margin-left: 5em;}
-.credit { height: 100%; background-color: #333333}
+.aturan-singkat {padding-top: 4em; text-align: right}
 
-.gold { margin: auto 2em 2em auto;}
-.bronze {margin: auto 2em 1em auto}
+.hadiah { background-image: url('../images/bg-hadiah.png'); height: 250px; text-align: center;}
 
 .akun { margin: 2em auto;}
 .kontak{
-    color: rgb(238, 252, 248);
+    color: rgb(255, 255, 255);
     margin-top: 3em;
     -webkit-box-shadow: 0 3px 0 rgba(253, 247, 247, 0.692);
     -moz-box-shadow: 0 3px 0 rgba(240, 240, 240, 0.1);
@@ -62,8 +64,56 @@ body { background-color: #1A1A1A; padding-top: 55px;}
     border-radius: 5px;
 }
 @media screen and (max-width: 767px){
-    .tentang {text-align: center;}
-    .form-horizontal { margin-left: 2em}
     .akun { margin-top: 2em; margin-bottom: 0;}
     .kontak { text-align: center; padding-left: 1.5em;}
 }
+/* #Green Sea Flat Button
+==================================================*/
+.btn-lain {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #16a085;
+  border: 0;
+  border-bottom: 2px solid #14947b;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #14947b;
+  box-shadow: inset 0 -2px #14947b;
+}
+.btn-lain:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* #Pomegranate Flat Button
+==================================================*/
+.btn-penting {
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #c0392b;
+    border: 0;
+    border-bottom: 2px solid #b53224;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #b53224;
+    box-shadow: inset 0 -2px #b53224;
+  }
+  .btn-penting:active {
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
