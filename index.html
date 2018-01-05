@@ -19,6 +19,34 @@
     </script>
 </head>
 
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-newsletter modal-centered">
+        <div class="modal-content">
+            <form action="/examples/actions/confirmation.php" method="post">
+                <div class="modal-header">
+                    <div class="icon-box">
+                        <i class="fa fa-envelope-open-o"></i>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>Subscribe to our newsletter</h4>
+                    <p>Join our subscribers list to get the latest news, updates and special offers delivered directly in your
+                        inbox.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <span class="input-group-btn">
+                            <input type="submit" class="btn btn-primary" value="Subscribe">
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <body>
     <!-- NAVIGASI -->
     <header>
@@ -78,7 +106,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <form action="http://google.com">
                         <input type="submit" value="Saya Ingin Mendaftar" class="btn-penting daftar" />
                     </form>
@@ -132,8 +160,8 @@
 
             <!-- ATURAN -->
             <div class="col title" id="link-aturan">Aturan dalam Lomba</div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 aturan-singkat">
+            <div class="row justify-content-center aturan">
+                <div class="col-md-6 col-md-6 aturan-singkat">
                     <span class="apa-itu">Aturan yang harus diikuti seperti</span> ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                     culpa eveniet dolorem dolore explicabo iste, quos, nisi, sit sequi dolor repudiandae ut eaque beatae
                     atque ipsa laboriosam quis ea odio est id esse. At ducimus tempore placeat. Consectetur, soluta iste?
@@ -253,14 +281,14 @@
                         <img src="images/instagram.png" alt="Akun Instagram" class="img-fluid">
                     </a>
                 </div>
-                <div class="col-md-6 akun kontak" style="text-align: left">
+                <div class="col-md-6 akun kontak">
                     <span> Rio Gunawan</span>
                     <span style="margin-left: 4em;"> (+62) 813-9067-8076</span>
                     <br>
                     <span> Andika KangenBand</span>
                     <span style="margin-left: 1em;"> (+62) 812-0000-8076</span>
                 </div>
-                <div class="col-sm-2 akun" style="text-align: left"></div>
+                <div class="col-sm-2 akun"></div>
             </div>
             <div style="text-align: center;color: #fff;">Copyright © 2017 IFEST UAJY. All rights reserved</div>
         </div>
@@ -274,12 +302,12 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        sr.reveal('.logo-ifest');
-        sr.reveal('.logo-ifoc');
-        sr.reveal('.logo-aturan');
-        sr.reveal('.timeline-content',150);
-        sr.reveal('.kotak',150);
-        sr.reveal('.title');
+        sr.reveal('.logo-ifest', 100);
+        sr.reveal('.logo-ifoc', 100);
+        sr.reveal('.logo-aturan', 100);
+        sr.reveal('.timeline-content', 150);
+        sr.reveal('.kotak', 150);
+        sr.reveal('.title', 120);
         sr.reveal('.line-title');
         sr.reveal('.tentang');
     </script>
@@ -321,6 +349,11 @@
                     }
                 }
             });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
     </script>
 </body>
 

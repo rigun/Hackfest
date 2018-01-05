@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 body { background-color: #000000; padding-top: 55px;}
 
 .navbar-dark a {color: rgb(233, 60, 7);}
@@ -23,18 +24,18 @@ body { background-color: #000000; padding-top: 55px;}
 
 .parallax-one {
     /* The image used */
-    background-image: url('../images/anim-one.gif');
     /* Set a specific height */
-    height: 300px;
+    height: 5em;
  
     /* Create the parallax scrolling effect */
     background-attachment: scroll;
     background-position: center center;
+    background-size: contain;
     background-repeat: no-repeat;    
 }
 .title {
     padding: 2em 0 2em 0;
-    font-family: 'Share Tech',Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech Mono',Arial, Helvetica, sans-serif;
     font-size: 45px;
     text-align: center;
     color: #000000;
@@ -63,10 +64,20 @@ body { background-color: #000000; padding-top: 55px;}
     -ms-border-radius: 5px;
     border-radius: 5px;
 }
+@media screen and (max-width: 768px){.aturan-singkat{padding-bottom: 2em;} .logo-aturan{padding-top: 4em;}}
 @media screen and (max-width: 767px){
+    .aturan {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .logo-aturan {width: 70%; margin-left: 10em;}
+    .aturan-singkat { text-align: center;}
+
     .akun { margin-top: 2em; margin-bottom: 0;}
     .kontak { text-align: center; padding-left: 1.5em;}
 }
+@media screen and (max-width: 625px){.logo-aturan{margin-left: 3rem;}}
+@media screen and (max-width: 824px){ .kotak1 .kotak-title {font-size: 10px;}}
 /* #Green Sea Flat Button
 ==================================================*/
 .btn-lain {
