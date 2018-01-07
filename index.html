@@ -15,37 +15,9 @@
 
     <script src="js/scrollreveal.min.js"></script>
     <script>
-        window.sr = ScrollReveal({ reset: true });
+        window.sr = ScrollReveal();
     </script>
 </head>
-
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog modal-newsletter modal-centered">
-        <div class="modal-content">
-            <form action="/examples/actions/confirmation.php" method="post">
-                <div class="modal-header">
-                    <div class="icon-box">
-                        <i class="fa fa-envelope-open-o"></i>
-                    </div>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                        <span>&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <h4>Subscribe to our newsletter</h4>
-                    <p>Join our subscribers list to get the latest news, updates and special offers delivered directly in your
-                        inbox.</p>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email" required>
-                        <span class="input-group-btn">
-                            <input type="submit" class="btn btn-primary" value="Subscribe">
-                        </span>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
 
 <body>
     <!-- NAVIGASI -->
@@ -81,6 +53,40 @@
         </nav>
     </header>
     <!-- AKHIR NAVIGASI -->
+
+    <!-- STICKY SPONSOR -->
+    <div class="sponsor">
+        <div class="row sponsor-title">
+            <div class="col-8">
+                <h5>SPONSOR-SPONSOR</h5>
+            </div>
+            <div class="col-xs-2">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="text-align: right;">
+                    <span aria-hidden="true">Close</span>
+                </button>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide sponsor-slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid setwidth" src="images/slider1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid setwidth" src="images/slider2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid setwidth" src="images/slider3.jpg" alt="Third slide">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AKHIR STICKY SPONSOR -->
+
     <div class="container-fluid" id="awal">
         <div class="row">
             <div class="col-4 red"></div>
@@ -91,6 +97,7 @@
             <img class="logo-ifest" src="images/ifest.png" alt="">
         </div>
 
+        <div class="sponsorgo"></div>
         <!-- TENTANG -->
         <div class="container blue" id="link-tentang"></div>
         <div class="container bg-putih">
@@ -108,7 +115,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <form action="http://google.com">
-                        <input type="submit" value="Saya Ingin Mendaftar" class="btn-penting daftar" />
+                        <input type="submit" value="DAFTAR SEKARANG" class="btn-penting " />
                     </form>
                 </div>
             </div>
@@ -117,7 +124,7 @@
 
         <div class="container parallax-one"></div>
         <div class="container red" id="link-kategori"></div>
-        <div class="container bg-putih">
+        <div class="container bg-putih sectiondua">
 
             <!-- KATEGORI -->
             <div class="col title">Kategori Lomba</div>
@@ -159,6 +166,7 @@
             <!-- AKHIR KATEGORI -->
 
             <!-- ATURAN -->
+            <div class="separator"></div>
             <div class="col title" id="link-aturan">Aturan dalam Lomba</div>
             <div class="row justify-content-center aturan">
                 <div class="col-md-6 col-md-6 aturan-singkat">
@@ -173,13 +181,14 @@
             <div class="row justify-content-center">
                 <div class="col-md-3">
                     <form action="http://google.com">
-                        <input type="submit" value="Liat dari Poster" class="btn-lain daftar" />
+                        <input type="submit" value="Liat dari Poster" class="btn-lain" />
                     </form>
                 </div>
             </div>
             <!-- AKHIR ATURAN -->
 
             <!-- JADWAL -->
+            <div class="separator"></div>
             <div class="col title" id="link-jadwal">Jadwal Acara</div>
             <div id="timeline">
                 <div class="timeline-item">
@@ -248,6 +257,7 @@
             <!-- AKHIR JADWAL -->
 
             <!-- HADIAH -->
+
             <div class="col title" id="link-hadiah">Hadiah Lomba</div>
             <div class="row hadiah justify-content-center">
                 <div class="col-3">
@@ -264,6 +274,13 @@
                 </div>
             </div>
             <!-- AKHIR HADIAH -->
+            <div class="row justify-content-center daftaryuk">
+                <div class="col-md-4">
+                    <form action="http://google.com" class="daftar">
+                        <input type="submit" value="DAFTAR SEKARANG" class="btn-penting" />
+                    </form>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -300,6 +317,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/stickyfill.min.js"></script>
 
     <script>
         sr.reveal('.logo-ifest', 100);
@@ -351,8 +369,17 @@
             });
     </script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $("#myModal").modal('show');
+        var muncul = 1;
+        $(document).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            var element = $('.sponsorgo').offset().top;
+            if (scroll >= element && muncul == 1) {
+                $(".sponsor").css('visibility', 'visible');
+                muncul = 0;
+            }
+        });
+        $('.close').click(function (event) {
+            $(".sponsor").css('visibility', 'hidden');
         });
     </script>
 </body>

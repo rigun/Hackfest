@@ -15,12 +15,11 @@ body { background-color: #000000; padding-top: 55px;}
 
 .logo-ifest {margin: 3.5em auto; width: 35%;}
 .bg-putih {background: #fff; height: 100%; padding-bottom: 3em;}
-
 .tentang { padding: 3em;}
 .logo-ifoc { text-align: center;}
 .singkat { margin: 2em 0;}
 .apa-itu { font-size: 18px; color: #b53224;}
-.daftar { padding-bottom: 4em;}
+.daftar { padding-top: 3em;}
 
 .parallax-one {
     /* The image used */
@@ -34,12 +33,13 @@ body { background-color: #000000; padding-top: 55px;}
     background-repeat: no-repeat;    
 }
 .title {
-    padding: 2em 0 2em 0;
+    padding: 0.5em 0 2em 0;
     font-family: 'Share Tech Mono',Arial, Helvetica, sans-serif;
     font-size: 45px;
     text-align: center;
     color: #000000;
 }
+.separator {margin-top:1.5em; height: 2px; background: #000000; margin: 4em; text-align: center;}
 
 .kotak {height: 18rem;width: 70%; background-color: #E1D9FF; margin: 0.5em; text-align: center;}
 .kotak-title { padding-top: 4em;}
@@ -49,7 +49,7 @@ body { background-color: #000000; padding-top: 55px;}
 
 .aturan-singkat {padding-top: 4em; text-align: right}
 
-.hadiah { background-image: url('../images/bg-hadiah.png'); height: 250px; text-align: center;}
+.hadiah { background-image: url('../images/bg-hadiah.png'); height: 250px; text-align: center; margin-bottom: 1em; }
 
 .akun { margin: 2em auto;}
 .kontak{
@@ -64,20 +64,50 @@ body { background-color: #000000; padding-top: 55px;}
     -ms-border-radius: 5px;
     border-radius: 5px;
 }
+.sponsor { 
+    background-color: #fff;
+    height: 100%;
+    max-width: 600px;
+    max-height: 350px;
+    padding: 1em;
+    border: #333333 solid 2px;
+
+    top: 55%;
+    right:20px;
+    visibility: hidden; 
+    position: fixed;
+    position: -webkit-fixed;
+    z-index: 99999;
+}
+.sponsor-title {
+    border-bottom: double 1px #000000;
+}
+.setwidth {
+    max-height: 200px;
+    min-width: auto;
+}
+.sponsor-slide {
+    padding-top: 1em;
+}
+
+
 @media screen and (max-width: 768px){.aturan-singkat{padding-bottom: 2em;} .logo-aturan{padding-top: 4em;}}
 @media screen and (max-width: 767px){
     .aturan {
         display: flex;
         flex-direction: column-reverse;
     }
+    .singkat {text-align: center;}
     .logo-aturan {width: 70%; margin-left: 10em;}
     .aturan-singkat { text-align: center;}
 
     .akun { margin-top: 2em; margin-bottom: 0;}
     .kontak { text-align: center; padding-left: 1.5em;}
+    .sponsor { top:50%; right:6.5%;}
 }
 @media screen and (max-width: 625px){.logo-aturan{margin-left: 3rem;}}
 @media screen and (max-width: 824px){ .kotak1 .kotak-title {font-size: 10px;}}
+@media screen and (max-width:375px){ .sponsor{ right:2px;}}
 /* #Green Sea Flat Button
 ==================================================*/
 .btn-lain {
