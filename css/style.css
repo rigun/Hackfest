@@ -1,58 +1,148 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
-body { background-color: #000000; padding-top: 55px;}
+body {
+    background-color: #000000;
+    padding-top: 55px;
+}
 
-.navbar-dark a {color: rgb(233, 60, 7);}
-.navbar-dark a:hover {color: rgb(251, 255, 2);}
-.navbar-dark { background-color: #333333;}
+.navbar-dark a {
+    color: rgb(233, 60, 7);
+}
+
+.navbar-dark a:hover {
+    color: rgb(251, 255, 2);
+}
+
+.navbar-dark {
+    background-color: #333333;
+}
+
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus{ color: rgb(233, 60, 7); }
-.navbar-dark .navbar-nav .nav-link { color: #fff; }
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: rgb(233, 60, 7);
+}
 
-.red, .green, .blue { height: 5px; }
-.red {background-color: #FF9999;}
-.green {background-color: #DAFF99;}
-.blue {background-color: #99EBFF;}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
 
-.logo-ifest {margin: 3.5em auto; width: 35%;}
-.bg-putih {background: #fff; height: 100%; padding-bottom: 3em;}
-.tentang { padding: 3em;}
-.logo-ifoc { text-align: center;}
-.singkat { margin: 2em 0;}
-.apa-itu { font-size: 18px; color: #b53224;}
-.daftar { padding-top: 3em;}
+.red,
+.green,
+.blue {
+    height: 5px;
+}
+
+.red {
+    background-color: #FF9999;
+}
+
+.green {
+    background-color: #DAFF99;
+}
+
+.blue {
+    background-color: #99EBFF;
+}
+
+.logo-ifest {
+    margin: 3.5em auto;
+    width: 35%;
+}
+
+.bg-putih {
+    background: #fff;
+    height: 100%;
+    padding-bottom: 3em;
+}
+
+.tentang {
+    padding: 3em;
+}
+
+.logo-ifoc {
+    text-align: center;
+}
+
+.singkat {
+    margin: 2em 0;
+}
+
+.apa-itu {
+    font-size: 18px;
+    color: #b53224;
+}
+
+.daftar {
+    padding-top: 3em;
+}
 
 .parallax-one {
     /* The image used */
     /* Set a specific height */
     height: 5em;
- 
     /* Create the parallax scrolling effect */
     background-attachment: scroll;
     background-position: center center;
     background-size: contain;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
+
 .title {
     padding: 0.5em 0 2em 0;
-    font-family: 'Share Tech Mono',Arial, Helvetica, sans-serif;
+    font-family: 'Share Tech Mono', Arial, Helvetica, sans-serif;
     font-size: 45px;
     text-align: center;
     color: #000000;
 }
-.separator {margin-top:1.5em; height: 2px; background: #000000; margin: 4em; text-align: center;}
 
-.kotak {height: 18rem;width: 70%; background-color: #E1D9FF; margin: 0.5em; text-align: center;}
-.kotak-title { padding-top: 4em;}
-.kotak-button {padding-top: 0.5em;}
-.kotak2 {background-color: #D9FEFF;}
-.kotak3 { background-color: rgb(255, 217, 217);}
+.separator {
+    margin-top: 1.5em;
+    height: 2px;
+    background: #000000;
+    margin: 4em;
+    text-align: center;
+}
 
-.aturan-singkat {padding-top: 4em; text-align: right}
+.kotak {
+    height: 18rem;
+    width: 70%;
+    background-color: #E1D9FF;
+    margin: 0.5em;
+    text-align: center;
+}
 
-.hadiah { background-image: url('../images/bg-hadiah.png'); height: 250px; text-align: center; margin-bottom: 1em; }
+.kotak-title {
+    padding-top: 4em;
+}
 
-.akun { margin: 2em auto;}
-.kontak{
+.kotak-button {
+    padding-top: 0.5em;
+}
+
+.kotak2 {
+    background-color: #D9FEFF;
+}
+
+.kotak3 {
+    background-color: rgb(255, 217, 217);
+}
+
+.aturan-singkat {
+    padding-top: 4em;
+    text-align: right
+}
+
+.hadiah {
+    background-image: url('../images/bg-hadiah.png');
+    height: 250px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.akun {
+    margin: 2em auto;
+}
+
+.kontak {
     color: rgb(255, 255, 255);
     margin-top: 3em;
     -webkit-box-shadow: 0 3px 0 rgba(253, 247, 247, 0.692);
@@ -64,77 +154,124 @@ body { background-color: #000000; padding-top: 55px;}
     -ms-border-radius: 5px;
     border-radius: 5px;
 }
-.sponsor { 
+
+.sponsor {
     background-color: #fff;
     height: 100%;
     max-width: 600px;
     max-height: 350px;
     padding: 1em;
     border: #333333 solid 2px;
-
     top: 55%;
-    right:20px;
-    visibility: hidden; 
+    right: 20px;
+    visibility: hidden;
     position: fixed;
     position: -webkit-fixed;
     z-index: 99999;
 }
+
 .sponsor-title {
     border-bottom: double 1px #000000;
 }
+
 .setwidth {
     max-height: 200px;
     min-width: auto;
 }
+
 .sponsor-slide {
     padding-top: 1em;
 }
 
+@media screen and (max-width: 768px) {
+    .aturan-singkat {
+        padding-bottom: 2em;
+    }
+    .logo-aturan {
+        padding-top: 4em;
+    }
+}
 
-@media screen and (max-width: 768px){.aturan-singkat{padding-bottom: 2em;} .logo-aturan{padding-top: 4em;}}
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .aturan {
         display: flex;
         flex-direction: column-reverse;
     }
-    .singkat {text-align: center;}
-    .logo-aturan {width: 70%; margin-left: 10em;}
-    .aturan-singkat { text-align: center;}
-
-    .akun { margin-top: 2em; margin-bottom: 0;}
-    .kontak { text-align: center; padding-left: 1.5em;}
-    .sponsor { top:50%; right:6.5%;}
+    .singkat {
+        text-align: center;
+    }
+    .logo-aturan {
+        width: 70%;
+        margin-left: 10em;
+    }
+    .aturan-singkat {
+        text-align: center;
+    }
+    .akun {
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+    .kontak {
+        text-align: center;
+        padding-left: 1.5em;
+    }
+    .sponsor {
+        top: 50%;
+        right: 6.5%;
+    }
 }
-@media screen and (max-width: 625px){.logo-aturan{margin-left: 3rem;}}
-@media screen and (max-width: 824px){ .kotak1 .kotak-title {font-size: 10px;}}
-@media screen and (max-width:375px){ .sponsor{ right:2px;}}
+
+@media screen and (max-width: 625px) {
+    .logo-aturan {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .kotak1 .kotak-title {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .sponsor {
+        right: 2px;
+    }
+}
+
+
 /* #Green Sea Flat Button
 ==================================================*/
+
 .btn-lain {
-  position: relative;
-  vertical-align: top;
-  width: 100%;
-  height: 60px;
-  padding: 0;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #16a085;
-  border: 0;
-  border-bottom: 2px solid #14947b;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #14947b;
-  box-shadow: inset 0 -2px #14947b;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #16a085;
+    border: 0;
+    border-bottom: 2px solid #14947b;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #14947b;
+    box-shadow: inset 0 -2px #14947b;
 }
+
 .btn-lain:active {
-  top: 1px;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+    top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
+
+
 /* #Pomegranate Flat Button
 ==================================================*/
+
 .btn-penting {
     position: relative;
     vertical-align: top;
@@ -151,10 +288,11 @@ body { background-color: #000000; padding-top: 55px;}
     cursor: pointer;
     -webkit-box-shadow: inset 0 -2px #b53224;
     box-shadow: inset 0 -2px #b53224;
-  }
-  .btn-penting:active {
+}
+
+.btn-penting:active {
     top: 1px;
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-  }
+}

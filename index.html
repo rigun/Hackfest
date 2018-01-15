@@ -21,7 +21,7 @@
 
 <body>
     <!-- NAVIGASI -->
-    <header>
+    <header id="awal">
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="#awal">Overc;ock Competition</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
@@ -87,16 +87,19 @@
     </div>
     <!-- AKHIR STICKY SPONSOR -->
 
-    <div class="container-fluid" id="awal">
+    <div class="container-fluid">
+        <!-- KOTAK WARNA WARNI -->
         <div class="row">
             <div class="col-4 red"></div>
             <div class="col-4 green"></div>
             <div class="col-4 blue"></div>
         </div>
+        <!-- LOGO -->
         <div style="text-align: center">
             <img class="logo-ifest" src="images/ifest.png" alt="">
         </div>
 
+        <!-- SAAT SPONSOR MUNCUL -->
         <div class="sponsorgo"></div>
         <!-- TENTANG -->
         <div class="container blue" id="link-tentang"></div>
@@ -114,7 +117,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <form action="http://google.com">
+                    <form action="pendaftaran.html">
                         <input type="submit" value="DAFTAR SEKARANG" class="btn-penting " />
                     </form>
                 </div>
@@ -276,7 +279,7 @@
             <!-- AKHIR HADIAH -->
             <div class="row justify-content-center daftaryuk">
                 <div class="col-md-4">
-                    <form action="http://google.com" class="daftar">
+                    <form action="pendaftaran.html" class="daftar">
                         <input type="submit" value="DAFTAR SEKARANG" class="btn-penting" />
                     </form>
                 </div>
@@ -339,8 +342,7 @@
             .click(function (event) {
                 // On-page links
                 if (
-                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                    &&
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
                     location.hostname == this.hostname
                 ) {
                     // Figure out element to scroll to
