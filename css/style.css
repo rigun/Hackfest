@@ -59,6 +59,7 @@ body {
 }
 
 .logo-ifoc {
+    margin-top: 3em;
     text-align: center;
 }
 
@@ -228,6 +229,8 @@ body {
 }
 
 @media screen and (max-width: 824px) {
+    .aturan-singkat{ text-align: justify}
+    .timeline-content p { text-align: justify}
     .kotak1 .kotak-title {
         font-size: 10px;
     }

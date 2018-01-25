@@ -74,10 +74,12 @@ body {
     padding-top: 3em;
     padding-bottom: 3em;
 }
+.emptyholder {margin: 0 2em 0 2em}
 .control-label {
     text-align: right;
     color: rgb(23, 5, 71);
 }
+.bg-footer { margin-top: -13em}
 
 .btn-lain {
     position: relative;
@@ -103,8 +105,17 @@ body {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
+@media screen and (max-width:1024px) {
+    .bg-footer { margin-top: -25em}
+}
 @media screen and (max-width:768px) {
     .j2 { text-align: left;}
     .zzz { margin-bottom: 4em;}
+    .bg-footer { margin-top: 1em}
+}
+@media screen and (max-width:414px) {
+    p {text-align: justify}
+    .bg-footer {text-align: center}
+    .two-insta { margin-top: 1em}
+    .marginme {margin-left: -.15em}
 }
