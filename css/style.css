@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@font-face {
+    font-family: ShareTech;
+    src: url(../ShareTech-Regular.woff);
+}
+@font-face {
+    font-family: ClearSans;
+    src: url(../ClearSans-Regular.woff);
+}
+
 body {
     background-color: #000000;
     padding-top: 55px;
@@ -25,9 +33,15 @@ body {
     color: #fff;
 }
 
+.apa-itu {
+    font-size: 18px;
+    color: #b53224;
+}
+
 .red,
 .green,
-.blue {
+.blue,
+.yellow {
     height: 5px;
 }
 
@@ -43,119 +57,39 @@ body {
     background-color: #99EBFF;
 }
 
+.yellow {
+    background-color: #FFFF00;
+}
 .logo-ifest {
-    margin: 3.5em auto;
-    width: 35%;
+    border: #FFFF00 solid 4px;
+    width: 80%;
+    border-radius: 4px;
+    z-index: 0;
 }
 
-.bg-putih {
-    background: #fff;
-    height: 100%;
-    padding-bottom: 3em;
+.border-right {
+    border-right: solid 5px;
+}
+.border-left {
+    border-left: solid 5px;
 }
 
-.tentang {
-    padding: 3em;
+.border-red { 
+    border-right-color: rgb(133, 171, 252);
+    border-left-color: rgb(133, 171, 252);
 }
-
-.logo-ifoc {
-    margin-top: 3em;
-    text-align: center;
+.border-green {
+    border-right-color: rgb(151, 253, 151);
+    border-left-color: rgb(151, 253, 151);
 }
-
-.singkat {
-    margin: 2em 0;
+.head-ifest {
+    font-family: ShareTech,Courier New, Courier, monospace;
+    font-size: 2.5em;
+    margin-top: -4em;
+    margin-bottom: 4em;
+    color: white;
+    z-index: 1;
 }
-
-.apa-itu {
-    font-size: 18px;
-    color: #b53224;
-}
-
-.daftar {
-    padding-top: 3em;
-}
-
-.parallax-one {
-    /* The image used */
-    /* Set a specific height */
-    height: 5em;
-    /* Create the parallax scrolling effect */
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.title {
-    padding: 0.5em 0 2em 0;
-    font-family: 'Share Tech Mono', Arial, Helvetica, sans-serif;
-    font-size: 45px;
-    text-align: center;
-    color: #000000;
-}
-
-.separator {
-    margin-top: 1.5em;
-    height: 2px;
-    background: #000000;
-    margin: 4em;
-    text-align: center;
-}
-
-.kotak {
-    height: 18rem;
-    width: 70%;
-    background-color: #E1D9FF;
-    margin: 0.5em;
-    text-align: center;
-}
-
-.kotak-title {
-    padding-top: 4em;
-}
-
-.kotak-button {
-    padding-top: 0.5em;
-}
-
-.kotak2 {
-    background-color: #D9FEFF;
-}
-
-.kotak3 {
-    background-color: rgb(255, 217, 217);
-}
-
-.aturan-singkat {
-    padding-top: 4em;
-    text-align: right
-}
-
-.hadiah {
-    background-image: url('../images/bg-hadiah.png');
-    height: 250px;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.akun {
-    margin: 2em auto;
-}
-
-.kontak {
-    color: rgb(255, 255, 255);
-    margin-top: 3em;
-    -webkit-box-shadow: 0 3px 0 rgba(253, 247, 247, 0.692);
-    -moz-box-shadow: 0 3px 0 rgba(240, 240, 240, 0.1);
-    -ms-box-shadow: 0 3px 0 rgba(241, 236, 236, 0.1);
-    box-shadow: 0 3px 0 rgba(248, 246, 246, 0.1);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-}
-
 .sponsor {
     background-color: #fff;
     height: 100%;
@@ -175,47 +109,103 @@ body {
     border-bottom: double 1px #000000;
 }
 
-.setwidth {
-    max-height: 200px;
-    min-width: auto;
-}
-
 .sponsor-slide {
     padding-top: 1em;
 }
 
+.setwidth {
+    max-height: 200px;
+    min-width: auto;
+}
+.bg-putih {
+    padding: 3em;
+    background-color: white;
+}
+.bg-hitam {
+    padding: 3em;
+    background-color: rgb(27, 27, 27);
+}
+
+.black-separator {
+    padding: 2em;
+}
+
+.mini-separator {
+    padding-top: 2em;
+}
+.supermini-separator {
+    padding-top: 1em;
+}
+
+.judul{
+    color: #361818;
+    font-family: ShareTech,Courier New, Courier, monospace;
+    font-size: 1.5em;
+}
+.judul-blockline{
+    background-color: #361818;
+    height:4px;
+}
+
+.judul-besar{
+    color: #361818;
+    font-family: ShareTech,Courier New, Courier, monospace;
+    font-size: 2.4em;
+}
+
+.tulis-penting {
+    padding-top: 2em;
+    color: #701414;
+    font-family: ClearSans,sans-serif;
+    font-size: 1.5em;
+}
+
+.tanggal {
+    background: rgba(0, 0, 0, 0.55);
+    color:#fff;
+    font-family: ShareTech,Courier New, Courier, monospace;
+    margin-top: 1em; margin-bottom: -1em;
+    font-size: 2.2em;
+
+}
+.panel-putih {
+    padding: 3em 3em 0 3em;
+    margin-bottom: 2em;
+    background-color: white;
+}
+
+.info-large {
+    font-family: ClearSans,sans-serif;
+    font-size: 1.5em;
+}
+.info-level1 {
+    background-color: #ECF0F1;
+    color: rgb(35, 36, 36);
+}
+.info-level2 {
+    background-color: #1C2128;
+    color: #FBFBFB;
+}
+.info-level3 {
+    background-color: rgb(57, 70, 78);
+    color: #E94A4D;
+}
+
+.hadiah {
+    background-image: url('../images/bg-hadiah.png');
+    height: 250px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
-    .aturan-singkat {
-        padding-bottom: 2em;
-    }
-    .logo-aturan {
-        padding-top: 4em;
-    }
+    
 }
 
 @media screen and (max-width: 767px) {
-    .aturan {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .singkat {
-        text-align: center;
-    }
-    .logo-aturan {
-        width: 70%;
-        margin-left: 10em;
-    }
-    .aturan-singkat {
-        text-align: center;
-    }
-    .akun {
-        margin-top: 2em;
-        margin-bottom: 0;
-    }
-    .kontak {
-        text-align: center;
-        padding-left: 1.5em;
-    }
     .sponsor {
         top: 50%;
         right: 6.5%;
@@ -223,17 +213,16 @@ body {
 }
 
 @media screen and (max-width: 625px) {
-    .logo-aturan {
-        margin-left: 3rem;
+    .kontak {
+        margin: 2em;
+        background: rgb(17, 16, 16);
+        text-align: center;
+        padding-bottom: 1em; padding-top: 1em;
     }
 }
 
 @media screen and (max-width: 824px) {
-    .aturan-singkat{ text-align: justify}
-    .timeline-content p { text-align: justify}
-    .kotak1 .kotak-title {
-        font-size: 10px;
-    }
+    
 }
 
 @media screen and (max-width:375px) {
