@@ -42,7 +42,7 @@
                         <a class="nav-link" href="index.html#link-hadiah">Hadiah</a>
                     </li>
                 </ul>
-                <a href="#" class="nav-link">Masuk</a>
+                <a href="login.html" class="nav-link">Masuk</a>
             </div>
         </nav>
     </header>
@@ -76,9 +76,9 @@
 
                             <!-- Text input-->
                             <div class="form-group row">
-                                <label class="col-md-4 control-label" for="txt-email">ID Line</label>
+                                <label class="col-md-4 control-label" for="txt-idline">ID Line</label>
                                 <div class="col-md-7">
-                                    <input id="txt-email" name="txt-email" placeholder="@xoverdrive" class="form-control input-md" required="" type="text">
+                                    <input id="txt-idline" name="txt-idline" placeholder="@xoverdrive" class="form-control input-md" required="" type="text">
                                     <span class="help-block">IDLine / Whatsaap</span>
                                 </div>
                             </div>
@@ -87,10 +87,9 @@
 
                             <!-- Text input-->
                             <div class="form-group row">
-                                <label class="col-md-4 control-label" for="txt-telepon">Username</label>
+                                <label class="col-md-4 control-label" for="txt-username">Username</label>
                                 <div class="col-md-7">
-                                    <input id="txt-telepon" name="txt-telepon" placeholder="Caracas" class="form-control input-md" required="" type="text">
-
+                                    <input id="txt-username" name="txt-username" placeholder="Caracas" class="form-control input-md" required="" type="text">
                                 </div>
                             </div>
 
@@ -105,10 +104,34 @@
 
                             <!-- Text input-->
                             <div class="form-group row">
+                                <label class="col-md-4 control-label" for="txt-telepon">Telepon</label>
+                                <div class="col-md-7">
+                                    <input id="txt-telepon" name="txt-telepon" placeholder="08xxx" class="form-control input-md" required="" type="text">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group row">
                                 <label class="col-md-4 control-label" for="txt-asal">Asal Universitas</label>
                                 <div class="col-md-7">
                                     <input id="txt-asal" name="txt-asal" placeholder="Atmajaya" class="form-control input-md" required="" type="text">
 
+                                </div>
+                            </div>
+
+                            <!-- Multiple Radios (inline) -->
+                            <div class="form-group row justify-content-center">
+                                <label class="col-md-4 control-label" for="radios">Pilih</label>
+                                <div class="col-md-7">
+                                    <label class="radio-inline" for="radios-0">
+                                        <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Workshop
+                                    </label>
+                                    <label class="radio-inline" for="radios-1">
+                                        <input type="radio" name="radios" id="radios-1" value="2"> Kompetisi
+                                    </label>
+                                    <label class="radio-inline" for="radios-2">
+                                        <input type="radio" name="radios" id="radios-2" value="3"> Keduanya
+                                    </label>
                                 </div>
                             </div>
 
@@ -140,41 +163,91 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-xs-12 col-md-10 col-lg-6 bg-putih bg-footer">
-                    <div class="row">
-                        <div class=" col-sm-2 text-center">
-                            <a href="#">
-                                <img src="images/line.png" alt="Akun Line" class="img-fluid">
-                            </a>
+            <div class="container" style="height: 160px"></div>
+        </div>
+        <!-- AKHIR BADAN -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+<footer>
+    <div class="container-fluid" id="link-kontak">
+        <div class="row">
+            <div class="col-4 red"></div>
+            <div class="col-4 green"></div>
+            <div class="col-4 blue"></div>
+        </div>
+    </div>
+    <div class="container-fluid bg-hitam">
+        <div class="container">
+            <div class="row align-content-center justify-content-center">
+                <div class="col-md-4 kontak">
+                    <p style="color:#fff">CONTACT US</p>
+                    <div class="row align-content-center justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <img src="images/kontak.png" class="img-fluid">
                         </div>
-                        <div class="col-sm-2 two-insta text-center">
-                            <a href="#">
-                                <img src="images/instagram.png" alt="Akun Instagram" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="col-md-8" style="margin-top:.5em; text-align: center">
-                            <span> Rio Gunawan</span>
-                            <span style="margin-left: 4em;"> (+62) 813-9067-8076</span>
-                            <br>
-                            <span> Andika KangenBand</span>
-                            <span style="margin-left: 1em;"> (+62) 812-0000-8076</span>
+                        <div class="col-md-8" style="color:#fff">
+                            <p>Person 1</p>
+                            <p>+6281387018700</p>
                         </div>
                     </div>
-                    <div style="color:black; text-align: center; margin-top:1.5em">Copyright © 2017 IFEST UAJY. All rights reserved</div>
+                    <div class="row align-content-center justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <img src="images/kontak.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-8" style="color:#fff">
+                            <p>Person 2</p>
+                            <p>+6281387018701</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 emptyholder"></div>
+                <div class="col-md-4 kontak">
+                    <p style="color:#fff">FOLLOW ON SOCIAL MEDIA</p>
+                    <div class="row align-content-center justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <img src="images/instagram.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-8" style="color:#fff">
+                            <p>instagram.com/ifest_uajy</p>
+                            <p>Or
+                                <a href="http://#">Click Here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-content-center">
+                        <div class="col-md-4 text-center">
+                            <img src="images/line.png" class="img-fluid">
+                        </div>
+                        <div class="col-md-8" style="color:#fff">
+                            <p>@ykb1487</p>
+                            <p>Or
+                                <a href="http://#">Click Here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center kontak">
+                    <p style="color:#fff">SCAN ME IN LINE</p>
+                    <img src="images/barcode-line.jpg" style="width:auto; height:120px;" class="img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="text-center text-white">
+                    Copyright © 2017 IFEST UAJY. All rights reserved
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="text-center text-warning">
+                    Icons/Images are provided by
+                    <a href="imprint.html">various authors</a>
+                </div>
             </div>
         </div>
-        <div class="container" style="height: 160px"></div>
     </div>
-    <!-- AKHIR BADAN -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
+</footer>
 
 </html>
