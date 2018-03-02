@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <!-- NAVIGASI -->
     <header>
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
@@ -67,10 +66,10 @@
 
                             <!-- Text input-->
                             <div class="form-group row">
-                                <label class="col-md-4 control-label" for="txt-nama">Nama Tim</label>
+                                <label class="col-md-4 control-label" for="txt-nama" id="idnama">Nama </label>
                                 <div class="col-md-7">
                                     <input id="txt-nama" name="txt-nama" placeholder="XtremeOverdrive" class="form-control input-md" required="" type="text">
-
+                                    <span class="help-block">Isi Nama Anda jika Workshop</span>
                                 </div>
                             </div>
 
@@ -112,6 +111,14 @@
 
                             <!-- Text input-->
                             <div class="form-group row">
+                                <label class="col-md-4 control-label" for="txt-npm">NPM</label>
+                                <div class="col-md-7">
+                                    <input id="txt-npm" name="txt-npm" placeholder="" class="form-control input-md" required="" type="text">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group row">
                                 <label class="col-md-4 control-label" for="txt-asal">Asal Universitas</label>
                                 <div class="col-md-7">
                                     <input id="txt-asal" name="txt-asal" placeholder="Atmajaya" class="form-control input-md" required="" type="text">
@@ -124,13 +131,13 @@
                                 <label class="col-md-4 control-label" for="radios">Pilih</label>
                                 <div class="col-md-7">
                                     <label class="radio-inline" for="radios-0">
-                                        <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Workshop
+                                        <input type="radio" name="radios" id="radios-0" value="1" checked="checked" onclick="radio1click()"> Workshop
                                     </label>
                                     <label class="radio-inline" for="radios-1">
-                                        <input type="radio" name="radios" id="radios-1" value="2"> Kompetisi
+                                        <input type="radio" name="radios" id="radios-1" value="2" onclick="radio2click()"> Kompetisi
                                     </label>
                                     <label class="radio-inline" for="radios-2">
-                                        <input type="radio" name="radios" id="radios-2" value="3"> Keduanya
+                                        <input type="radio" name="radios" id="radios-2" value="3" onclick="radio3click()"> Keduanya
                                     </label>
                                 </div>
                             </div>
@@ -147,19 +154,10 @@
                 </div>
                 <div class="col-xs-12 col-md-10 col-lg-4 bg-putih kotak-tiga">
                     <p class="j2">Informasi</p>
-                    <div class="marginme">
+                    <div class="marginme text-justify">
                         <p class="judul">Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit pariatur voluptates id numquam
-                            cupiditate earum voluptate excepturi dolorem, velit reiciendis!</p>
-                        <p class="judul">Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit pariatur voluptates id numquam
-                            cupiditate earum voluptate excepturi dolorem, velit reiciendis!</p>
-                        <p class="judul">Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit pariatur voluptates id numquam
-                            cupiditate earum voluptate excepturi dolorem, velit reiciendis!</p>
-                        <p class="judul">Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit pariatur voluptates id numquam
-                            cupiditate earum voluptate excepturi dolorem, velit reiciendis!</p>
+                        <p>nama, asal sekolah, dan username tidak mengandung simbol seperti tanda titik. email diisi dengan
+                            format yg benar. pastikan data diketik, bukan di copy paste</p>
                     </div>
                 </div>
             </div>
@@ -172,6 +170,30 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                if (window.location.href.indexOf("#workshop") > -1) {
+                    $("#radios-0").prop("checked", true);
+                    radio1click();
+                }
+                else {
+                    $("#radios-1").prop("checked", true);
+                    radio2click();
+                }
+            });
+            function radio1click() {
+                document.getElementById('txt-npm').disabled = false;
+                $("#idnama").text("Nama");
+            }
+            function radio2click() {
+                document.getElementById('txt-npm').disabled = true;
+                $("#idnama").text("Nama Tim");
+            }
+            function radio3click() {
+                document.getElementById('txt-npm').disabled = false;
+                $("#idnama").text("Nama Tim");
+            }
+        </script>
 </body>
 <footer>
     <div class="container-fluid" id="link-kontak">

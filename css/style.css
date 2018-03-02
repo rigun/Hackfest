@@ -64,7 +64,17 @@ body {
     border: #FFFF00 solid 4px;
     width: 80%;
     border-radius: 4px;
+    top: 0;
+		left: 0;
     z-index: 0;
+    position: relative;
+}
+
+.tahun {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    width :228px; height:228px;
 }
 
 .border-right {
@@ -202,12 +212,23 @@ body {
     width: 17rem;
 }
 
-
+@media screen and (max-width: 1024px) {
+    .tahun {
+        top: 30px;
+        left: 40px;
+        width :218px; height:218px;
+    }
+}
 @media screen and (max-width: 768px) {
     .head-ifest {
         font-size: 1.5em;
         margin-top: -4em;
         margin-bottom: 4em;
+    }
+    .tahun {
+        top: 40px;
+        left: 30px;
+        width :152px; height:152px;
     }
 }
 
@@ -229,15 +250,25 @@ body {
 
 @media screen and (max-width: 414px) {
     .head-ifest {
-        font-size: 1em;
+        font-size: 0.8em;
         margin-top: -4em;
         margin-bottom: 4em;
+    }
+    .tahun {
+        top: 70px;
+        left: 10px;
+        width :102px; height:102px;
     }
 }
 
 @media screen and (max-width:375px) {
     .sponsor {
         right: 2px;
+    }
+    .tahun {
+        top: 70px;
+        left: 10px;
+        width :102px; height:102px;
     }
 }
 
