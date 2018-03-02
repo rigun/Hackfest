@@ -14,9 +14,12 @@
 
 <body>
     <!-- NAVIGASI -->
-    <header>
+    <header id="awal">
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="index.html#awal">Overc;ock Competition</a>
+            <a class="navbar-brand" href="index.html#awal">
+                <img src="images/ifoc.png" width="auto" height="30" alt="">
+                <img src="images/ifow.png" width="auto" height="30" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,18 +32,16 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#link-kategori">Kategori</a>
+                        <a class="nav-link" href="index.html#link-ifow">Workshop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#link-aturan">Aturan</a>
+                        <a class="nav-link" href="index.html#link-ifoc">Kompetisi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#link-jadwal">Jadwal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#link-hadiah">Hadiah</a>
+                        <a class="nav-link" href="index.html#link-kontak">Kontak</a>
                     </li>
                 </ul>
+                <a href="#" class="nav-link text-warning">Daftar</a>
                 <a href="login.html" class="nav-link">Masuk</a>
             </div>
         </nav>
@@ -88,7 +89,9 @@
                             <div class="form-group row">
                                 <label class="col-md-4 control-label" for="txt-username">Username</label>
                                 <div class="col-md-7">
-                                    <input id="txt-username" name="txt-username" placeholder="Caracas" class="form-control input-md" required="" type="text">
+                                    <input id="txt-username" name="txt-username" placeholder="Caracas" pattern="[a-z]+" title="hanya diperbolehkan karakter a-z (huruf kecil)"
+                                        class="form-control input-md" required="" type="text">
+                                    <span class="help-block">Karakter diperbolehkan: a-z (huruf kecil)</span>
                                 </div>
                             </div>
 
@@ -96,8 +99,9 @@
                             <div class="form-group row">
                                 <label class="col-md-4 control-label" for="txt-password">Kata Sandi</label>
                                 <div class="col-md-4 col-md-7">
-                                    <input id="txt-password" name="txt-password" placeholder="*****" class="form-control input-md" required="" type="password">
-                                    <span class="help-block">Lebih dari 8 kata</span>
+                                    <input id="txt-password" name="txt-password" placeholder="*****" pattern=".{8,}" title="Harus lebih dari 8 huruf" class="form-control input-md"
+                                        required="" type="password">
+                                    <span class="help-block">Lebih dari 7 huruf/angka/simbol</span>
                                 </div>
                             </div>
 
@@ -155,9 +159,9 @@
                 <div class="col-xs-12 col-md-10 col-lg-4 bg-putih kotak-tiga">
                     <p class="j2">Informasi</p>
                     <div class="marginme text-justify">
-                        <p class="judul">Lorem Ipsum</p>
-                        <p>nama, asal sekolah, dan username tidak mengandung simbol seperti tanda titik. email diisi dengan
-                            format yg benar. pastikan data diketik, bukan di copy paste</p>
+                        <p class="judul">Syarat Pengisian</p>
+                        <p>nama, asal sekolah, dan username tidak mengandung simbol seperti tanda titik. Line diisi dengan format
+                            yg benar (@overclock). pastikan data diketik, bukan di copy paste</p>
                     </div>
                 </div>
             </div>
@@ -213,8 +217,8 @@
                             <img src="images/kontak.png" class="img-fluid">
                         </div>
                         <div class="col-md-8" style="color:#fff">
-                            <p>Person 1</p>
-                            <p>+6281387018700</p>
+                            <p>Berlian</p>
+                            <p>0811-134-1202</p>
                         </div>
                     </div>
                     <div class="row align-content-center justify-content-center">
@@ -222,8 +226,8 @@
                             <img src="images/kontak.png" class="img-fluid">
                         </div>
                         <div class="col-md-8" style="color:#fff">
-                            <p>Person 2</p>
-                            <p>+6281387018701</p>
+                            <p>Ryandi</p>
+                            <p>0821-8944-3003</p>
                         </div>
                     </div>
                 </div>
@@ -263,9 +267,8 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="text-center text-warning">
-                    Icons/Images are provided by
-                    <a href="imprint.html">various authors</a>
+                <div class="text-center text-white">
+                    <a href="http://ifest-uajy.com" class="text-warning">ifest-uajy.com</a>
                 </div>
             </div>
         </div>
