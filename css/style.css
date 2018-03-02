@@ -198,11 +198,17 @@ body {
     margin-bottom: 1em;
 }
 
-
+.pembicara {
+    width: 17rem;
+}
 
 
 @media screen and (max-width: 768px) {
-    
+    .head-ifest {
+        font-size: 1.5em;
+        margin-top: -4em;
+        margin-bottom: 4em;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -221,8 +227,12 @@ body {
     }
 }
 
-@media screen and (max-width: 824px) {
-    
+@media screen and (max-width: 414px) {
+    .head-ifest {
+        font-size: 1em;
+        margin-top: -4em;
+        margin-bottom: 4em;
+    }
 }
 
 @media screen and (max-width:375px) {
