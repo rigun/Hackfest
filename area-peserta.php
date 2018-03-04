@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
-
+<?php include('qrlib.php');?>
 <head>
-    <title>IFOC: Login</title>
+    <title>IFOC: Area Peserta</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,24 +57,19 @@
             <div class="col-4 blue"></div>
         </div>
     </div>
+    <div class="black-separator"></div>
     <div class="container">
-        <div class="wrapper">
-            <form action="" method="post" name="Login_Form" class="form-signin">
-                <div class="row justify-content-center">
-                    <div class="col-md-5"><img src="images/ifoc.png" class="img-fluid"></div>
-                    <div class="col-md-5"><img src="images/ifow.png" class="img-fluid"></div>
-                </div>
-                <hr class="colorgraph">
-                <br>
-
-                <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
-                <input type="password" class="form-control" name="Password" placeholder="Password" required="" />
-
-                <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Login</button>
-                <button class="btn btn-lg btn-outline-dark btn-block" name="exit" value="Daftar" type="exit" onclick="location.href='pendaftaran.html'">Registrasi</button>
-            </form>
+        <div class="row justify-content-center">
+            <div class="col-md-8 bg-putih text-center">
+                <p class="big-text text-dark"> Halo, <?php echo "Hello World!";?></p>
+                <p class="med-text text-info"> Ada Mengikuti <?php echo "IFOW";?></p>
+                <div class="mini-separator"></div>
+                <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=<?php $ganti ?>&choe=UTF-8" title="Link to Google.com" />
+                <p class="med-text text-danger">SCAN UNTUK MENUJU</p>
+            </div>
         </div>
     </div>
+    <div class="black-separator"></div>
     <!-- AKHIR BADAN -->
 
     <!-- Optional JavaScript -->

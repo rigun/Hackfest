@@ -110,6 +110,24 @@ body {
     box-shadow: none;
 }
 
+.black-separator {
+    padding: 2em;
+}
+.big-text {
+    font-family: ClearSans,sans-serif;
+    font-size: 2em;
+}
+p.big-text {
+    margin-bottom: 0;
+}
+.med-text {
+    font-family: ShareTech,'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+.mini-separator {
+    padding: 1em;
+}
+
 .wrapper {    
 	margin-top: 80px;
 	margin-bottom: 80px;
