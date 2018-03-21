@@ -12,6 +12,8 @@ body {
     padding-top: 58px;
 }
 
+.hidethisshit { display: none }
+
 .navbar-dark a {
     color: rgb(233, 60, 7);
 }
